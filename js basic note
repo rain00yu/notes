@@ -1,0 +1,20 @@
+1. IIFE
+ function(){ /* code */ }();   //Syntax Error: unexpected token ( 
+// When the parser encounters the function keyword in the global scope or inside a function, 
+// it treats it as a function declaration (statement), and not as a function expression,
+// the function declaration nees a name. 
+//  function name([param,[, param,[..., param]]]) {
+//   [statements]
+//  }
+
+ function foo(){ /* code */ }();  //Syntax Error: unexpected token )
+// While parens placed after an expression indicate that the expression is a function to be invoked, 
+// parens placed after a statement are totally separate from the preceding statment, 
+// and are simply a grouping operator (used as a means to control precedence of evaluation).
+
+ function foo(){ /* code */ }( 1 );
+ <=> function foo(){ /* code */ }
+     ( 1 );
+     
+     
+ Immediately-Invoked Function Expression can be used to “lock in” values and effectively save state.
