@@ -17,4 +17,4 @@
      ( 1 );
      
      
- Immediately-Invoked Function Expression can be used to “lock in” values and effectively save state.
+ Immediately-Invoked Function Expression can be used to “lock in” values and effectively save state.(closure)
