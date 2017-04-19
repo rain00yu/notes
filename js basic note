@@ -1,4 +1,4 @@
-1. IIFE
+// 1. IIFE
  function(){ /* code */ }();   //Syntax Error: unexpected token ( 
 // When the parser encounters the function keyword in the global scope or inside a function, 
 // it treats it as a function declaration (statement), and not as a function expression,
@@ -17,4 +17,6 @@
      ( 1 );
      
      
- Immediately-Invoked Function Expression can be used to “lock in” values and effectively save state.(closure)
+ /* Immediately-Invoked Function Expression can be used to “lock in” values and effectively save state.(closure)*/
+ 
+ /* http://benalman.com/news/2010/11/immediately-invoked-function-expression/ */
